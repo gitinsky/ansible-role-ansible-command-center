@@ -1,0 +1,9 @@
+---
+- name: checkout Ansible
+  git: repo=git://github.com/alexclear/ansible.git dest=/opt/ansible accept_hostkey=yes
+
+- name: install YAML
+  apt: name=python-yaml state=present
+
+- name: install Jinja
+  apt: name=python-jinja2 state=present
